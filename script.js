@@ -1,1 +1,0 @@
-alert("Hello, I'm Wisdom and this is my portfolio");
