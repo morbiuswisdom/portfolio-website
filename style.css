@@ -1,3 +1,138 @@
-body{
-    background-color: white;
+body {
+  background-color: white;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header div {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+header div a {
+  color: rgb(19, 19, 19);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: rgb(42, 42, 42);
+  text-decoration: none;
+}
+
+/* Styles for the Homepage Hero About section */
+#about {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+#about img {
+  width: 50%;
+  height: auto;
+}
+
+.b-text {
+  color: #0671e0;
+  font-size: 1.5rem;
+}
+
+#about a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* Hero Buttons ================================================*/
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.primary {
+  color: white;
+  background-color: #2662e8;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.secondary {
+  color: #2662e8;
+  background-color: white;
+  padding: 1rem 2rem;
+  border: 2px solid #2662e8;
+  border-radius: 1rem;
+}
+
+/* Styles for the Project Section ========================================*/
+#projects {
+  padding: 2rem 4rem;
+  width: 100%;
+}
+
+#projects > div {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#projects > div > div {
+  width: 100%;
+  padding: 2rem;
+  border: 2px solid #dbeaff;
+  border-radius: 1.5rem;
+}
+
+#projects img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+#projects span{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    border-radius: 1rem;
+    background-color: #dbeaff;
+    color: #2662e8;
+    padding: 0.5rem 1rem;
+}
+
+#projects a{
+    font-family: "Open Sans", sans-serif;
+    margin-top: 1rem;
+}
+
+
+/* General Elements Styles =============================================== */
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
 }
