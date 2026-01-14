@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-*{
+* {
   margin: 0;
 }
 
@@ -25,6 +25,11 @@ header div {
 header div a {
   color: rgb(19, 19, 19);
   text-decoration: none;
+  transition: 0.7s ease;
+}
+
+header div a:hover{
+  color: #0671e0;
 }
 
 nav ul {
@@ -35,10 +40,30 @@ nav ul {
   font-size: 1rem;
 }
 
+/* Styles for the hamburger menu */
+.hamburger-icon{
+  height: 2rem;
+  width: 2rem;
+  display: none;
+  cursor: pointer; 
+}
+
+i{
+  width: 2rem;
+  height: 2rem;
+}
+
 a {
   color: rgb(42, 42, 42);
   text-decoration: none;
+  transition: 0.7s ease;
 }
+
+a:hover{
+  color: #0671e0;
+  font-weight: bold;
+}
+
 
 /* Styles for the Homepage Hero About section */
 #about {
@@ -50,7 +75,7 @@ a {
   background-color: #dbeaff;
 }
 
-#about > div{
+#about > div {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -124,27 +149,30 @@ a {
   border-radius: 1rem;
 }
 
-.project-badge{
+.project-badge {
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-#projects span{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    border-radius: 1rem;
-    background-color: #dbeaff;
-    color: #2662e8;
-    padding: 0.5rem 1rem;
+#projects span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  border-radius: 1rem;
+  background-color: #dbeaff;
+  color: #2662e8;
+  padding: 0.5rem 1rem;
 }
 
-.project-link{
-    font-family: "Open Sans", sans-serif;
-    margin-top: 1.5rem;
-    font-weight: 700;
+.project-link {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1.5rem;
+  font-weight: 700;
 }
 
 /* My Tech Stacks Section ===========================================================*/
-#skills{
+#skills {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -154,13 +182,13 @@ a {
   background-color: #dbeaff;
 }
 
-#skills div{
+#skills div {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
 
-#skills a{
+#skills a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,15 +202,14 @@ a {
   padding: 2rem;
 }
 
-#skills svg{
+#skills svg {
   width: 3rem !important;
   height: 3rem;
 }
 
-
 /* Styles for the CONTACT PAGE */
 
-#contact-form{
+#contact-form {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -192,13 +219,13 @@ a {
   padding: 4rem 0;
 }
 
-#contact-form > div:nth-of-type(2){
+#contact-form > div:nth-of-type(2) {
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 1rem;
 }
 
-form{
+form {
   font-family: "Open Sans", sans-serif;
   width: 100%;
   display: flex;
@@ -206,7 +233,7 @@ form{
   gap: 1rem;
 }
 
-form input{
+form input {
   border: 2px solid rgb(238, 238, 238);
   border-radius: 0.5rem;
   width: 100% !important;
@@ -216,7 +243,7 @@ form input{
   margin-top: 0.5rem;
 }
 
-form textarea{
+form textarea {
   border: 2px solid rgb(238, 238, 238);
   border-radius: 0.5rem;
   width: 100%;
@@ -226,19 +253,19 @@ form textarea{
   margin-top: 0.5rem;
 }
 
-.submit-btn{
+.submit-btn {
   background-color: #2662e8;
   color: #fff;
   padding: 1rem;
   font-weight: 700;
 }
 
-.input-height{
+.input-height {
   height: 36px;
 }
 
 /* Styles for contact info section in CONTACT Page =================================*/
-#contact-info{
+#contact-info {
   padding: 4rem;
   display: flex;
   gap: 2rem;
@@ -246,7 +273,7 @@ form textarea{
   align-items: center;
 }
 
-#contact-info p{
+#contact-info p {
   border: 2px solid #2662e8;
   border-radius: 1rem;
   padding: 2rem;
@@ -254,8 +281,7 @@ form textarea{
   font-weight: 700;
 }
 
-
-#socials{
+#socials {
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -263,20 +289,18 @@ form textarea{
   padding: 4rem 0;
 }
 
-#socials div{
+#socials div {
   display: flex;
   gap: 2rem;
   font-family: "Open Sans", sans-serif;
 }
 
-#socials div a{
+#socials div a {
   font-weight: 700;
   padding: 1rem 2rem;
   background-color: #dbeaff;
   border-radius: 1rem;
 }
-
-
 
 /* General Elements Styles =============================================== */
 p {
@@ -294,6 +318,46 @@ h1 {
   font-size: 3rem;
 }
 
-h2{
+h2 {
   font-size: 2rem;
+}
+
+/* Styles for Mobile Responsiveness */
+@media only screen and (max-width: 1013px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  #contact-form {
+    flex-direction: column !important;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #projects {
+    padding: 2rem 1rem;
+  }
+  #projects > div {
+    flex-direction: column;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  #skills div {
+    flex-direction: column;
+  }
+
+  /* Contact Page */
+
+  #socials div {
+    flex-direction: column;
+  }
+
+  /* Hamburger Menu */
+  .hamburger-icon{
+    display: block;
+  }
 }
